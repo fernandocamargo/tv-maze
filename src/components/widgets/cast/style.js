@@ -21,7 +21,7 @@ export default component => styled(component)`
 
     & > dt {
       color: #72727e;
-      font-family: 'Source Code Pro', monospace;
+      font-family: ${({ theme }) => theme.typography.source};
       font-size: 0.75rem;
       margin-top: 0.5rem;
       text-transform: uppercase;

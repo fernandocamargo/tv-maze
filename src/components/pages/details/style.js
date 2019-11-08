@@ -26,7 +26,7 @@ export default component => styled(component)`
     a {
       color: #7c898b;
       display: block;
-      font-family: 'Source Code Pro', monospace;
+      font-family: ${({ theme }) => theme.typography.source};
       font-size: 0.6rem;
       text-decoration: underline;
       text-transform: uppercase;

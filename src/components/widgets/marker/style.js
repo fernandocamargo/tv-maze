@@ -15,7 +15,7 @@ export default component => styled(component)`
       color: #cbc5ea;
       content: '\\e838';
       display: block;
-      font-family: 'Material Icons';
+      font-family: ${({ theme }) => theme.typography.icons};
       font-size: 3rem;
       line-height: 3rem;
       text-shadow: 2px 2px rgba(0, 0, 0, 0.1);

@@ -27,7 +27,7 @@ export default component => styled(component)`
         background-color: #ffcfdf;
         background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
         content: 'Image not found';
-        font-family: 'Source Code Pro', monospace;
+        font-family: ${({ theme }) => theme.typography.source};
         font-size: 1rem;
         font-weight: 300;
         height: 100%;
@@ -41,7 +41,7 @@ export default component => styled(component)`
 
       &:after {
         content: '\\e02c';
-        font-family: 'Material Icons';
+        font-family: ${({ theme }) => theme.typography.icons};
         font-size: 5rem;
         left: 50%;
         top: 50%;

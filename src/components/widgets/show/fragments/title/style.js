@@ -7,7 +7,7 @@ export default component => styled(component)`
   &,
   a {
     color: #525b76;
-    font-family: 'Arvo', serif;
+    font-family: ${({ theme }) => theme.typography.arvo};
     font-weight: 700;
   }
 

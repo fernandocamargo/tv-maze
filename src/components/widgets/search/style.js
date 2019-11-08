@@ -19,7 +19,7 @@ export default component => styled(component)`
       color: #d9d9d9;
       content: '\\e8b6';
       display: block;
-      font-family: 'Material Icons';
+      font-family: ${({ theme }) => theme.typography.icons};
       font-size: 2rem;
       font-weight: 600;
     }
@@ -30,7 +30,7 @@ export default component => styled(component)`
     border: solid 3px transparent;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
     color: #d9d9d9;
-    font-family: 'Lora', serif;
+    font-family: ${({ theme }) => theme.typography.lora};
     font-size: 2rem;
     outline: 0;
     padding: 0.5rem 1rem 0.5rem 3rem;

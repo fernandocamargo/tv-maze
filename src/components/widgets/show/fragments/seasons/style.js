@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default component => styled(component)`
   & > dt {
     color: #70877f;
-    font-family: 'Arvo', serif;
+    font-family: ${({ theme }) => theme.typography.arvo};
     font-size: 1rem;
   }
 

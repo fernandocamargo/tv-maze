@@ -15,7 +15,7 @@ export default component => styled(component)`
     border-top: solid 1px #d9d9d9;
     bottom: 0;
     color: #b9abcf;
-    font-family: 'Source Code Pro', monospace;
+    font-family: ${({ theme }) => theme.typography.source};
     font-size: 0.75rem;
     font-weight: 300;
     left: 0;
