@@ -3,6 +3,7 @@ import React, { Suspense } from 'react';
 import { Route } from 'react-router-dom';
 
 import { Details, Home } from 'components/pages';
+import { Loader } from 'components/widgets';
 
 import withStyle from './style';
 
@@ -12,7 +13,7 @@ const App = ({ className }) => (
       <h2>TV</h2>
     </header>
     <main>
-      <Suspense fallback="Loading...">
+      <Suspense fallback={<Loader />}>
         <Route path="/" component={Home} exact />
         <Route path="/details/:id" component={Details} />
       </Suspense>

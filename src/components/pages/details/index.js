@@ -2,7 +2,7 @@ import { string, shape } from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Show } from 'components/widgets';
+import { Loader, Show } from 'components/widgets';
 import { details as getDetailsBy } from 'services/shows';
 
 import CustomShow from './show';
@@ -35,7 +35,7 @@ const Details = ({
           </li>
         </ul>
       </nav>
-      {loading ? 'Loading...' : <Show {...show}>{CustomShow}</Show>}
+      {loading ? <Loader /> : <Show {...show}>{CustomShow}</Show>}
     </section>
   );
 };

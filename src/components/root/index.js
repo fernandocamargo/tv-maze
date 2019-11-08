@@ -7,10 +7,11 @@ import { ThemeProvider as Theming } from 'styled-components';
 import store, { persistor } from 'store';
 import theme from 'theme';
 import { App, Style } from 'components';
+import { Loader } from 'components/widgets';
 
 const Root = () => (
   <StateManager store={store}>
-    <StatePersistence persistor={persistor} loading="Loading...">
+    <StatePersistence persistor={persistor} loading={<Loader />}>
       <Router>
         <Theming theme={theme}>
           <Fragment>
