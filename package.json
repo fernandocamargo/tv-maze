@@ -6,7 +6,7 @@
   "dependencies": {
     "immutability-helper": "^3.0.1",
     "prop-types": "^15.7.2",
-    "qs": "^6.9.0",
+    "qs": "^6.9.7",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-redux": "^7.1.1",
